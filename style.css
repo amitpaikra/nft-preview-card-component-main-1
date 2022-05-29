@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan-color: hsl(178, 100%, 50%);
+
+
+    --main-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+    --white-color:hsl(215, 32%, 27%);
+}
+
+body{
+   background-color: var(--main-bg-color);
+}
+
+#mainDiv{
+    
+    margin-top: 5%;
+    width: 280px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;  
+    background-color: var(--card-bg-color);
+}
+
+h2{
+    /* display: block; */
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    color: rgba(236, 230, 230, 0.8);
+    
+}
+.hover-class:hover{
+    cursor: pointer;
+}
+
+#mainDiv  img{
+    /* width: inherit; */
+    /* height: 60%auto; */
+    /* border-radius: inherit; */
+}
+
+.img-control{
+    position: relative;
+    width: inherit;
+    height: 280px;
+    border-radius: inherit;
+}
+
+.img-control img{
+     width: inherit;
+    /* height: 60%auto; */
+    border-radius: inherit;
+}
+
+
+
+.replace-img{
+    position: absolute;
+    width:inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: red;
+    top: 0;
+    opacity: 0;
+}
+
+
+.replace-img:hover{
+    position: absolute;
+    width:inherit;
+    height: inherit;
+    border-radius: inherit;
+    background-color: var(--cyan-color);
+    top: 0;
+    opacity: 0.60;
+}
+
+.replace-img img{
+
+    position: absolute;
+    width:40px;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+li img{
+    padding-right: 0.3rem;
+}
+ul :first-child{
+    color:var(--cyan-color);
+}
+
+ul :nth-child(2){
+    color:rgba(236, 230, 230, 0.3);
+}
+
+p{
+    font-size: 18px;
+    color:rgba(236, 230, 230, 0.3);
+}
+hr{
+    width: inherit;
+    border-top: 1px solid black;
+    border-color: var(--line-color);
+}
+
+.image-auth{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.image-auth img{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    padding-right: 0.5rem;
+}
+.image-auth p{
+    display: inline-block;
+}
+
+.image-auth p span{
+    color:white;
+    cursor: pointer;
+}
+
+
+
+.attribution { padding-top :0.3rem; font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
